@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .logo-circle {
+    @apply absolute w-8 h-8 rounded-full 
+  }
+  .input-header {
+    @apply w-[50vw] h-[1.5rem] row-start-1 col-start-2 text-center bg-blue3 text-white text-xl leading-[1.25em] min-[1200px]:w-[145%] min-[1200px]:-ml-48
+  }
+  .input {
+    @apply w-[50vw] h-12 row-start-1 col-start-2 text-white text-center placeholder:text-gray-300 text-4xl leading-[1.5em] bg-blue2 outline-none [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none min-[1200px]:w-[145%] min-[1200px]:-ml-48
+  }
+
+}
